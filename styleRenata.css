@@ -1,0 +1,237 @@
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+*, *::before, *::after {
+	box-sizing: border-box;
+}
+div.menu_superior{
+	background-color: #FBF138;
+	color: #3A3A3C;
+	cursor: pointer;
+	float: right;
+	font-size:14px;
+	font-weight: 100;
+	letter-spacing: -0.5px;
+	margin-right: 10px;
+	margin-top: 60px;
+	padding: 5px;
+	border-radius: 5px;
+	box-shadow: 0 0 5px #cccccc;
+	z-index: 10;
+	width: 170px;
+}
+ul.menu {
+	display: inline-block;
+}
+ul.menu li.selected::before {
+	border-color: rgba(112, 206, 0, 1) transparent transparent;
+	border-style: solid;
+	border-width: 7px 7px 0;
+	bottom: 29px;
+	content: "";
+	left: 50%;
+	margin-left: -7px;
+	position: absolute;
+}
+ul.menu li.selected::after {
+	border-color: rgba(112, 206, 0, 1) transparent transparent;
+	border-style: solid;
+	border-width: 7px 7px 0;
+	bottom: 0px;
+	content: "";
+	left: 50%;
+	margin-left: -7px;
+	position: absolute;
+	transform: rotate(180deg);
+}
+ul.menu li.selected {
+   font-weight: 100;
+   color:#65CC32;
+}
+ul.menu li.selected span {
+	font-weight:400;
+}
+
+ul.menu li {
+	cursor: pointer;
+	display: block;
+	font-weight: 400;
+	padding: 3px 3px;
+	position: relative;
+	text-align: center;
+	border-bottom:1px solid #000; 
+
+}
+ul.menu li:last-child {
+	border-bottom:none;
+}
+ul.menu li span {
+	font-weight:100;
+}
+body {
+	background-color: #fff;
+	overflow-x:hidden;
+	margin: 0px;
+}
+a:link {
+    color: black;
+}
+a:visited {
+    color: black;
+}
+a:hover {
+    color: black;
+	text-decoration: none;
+}
+a:active {
+    color: black;
+}
+div#container-principal {
+	background-image: url("banner1.jpg");
+	background-position: 0px 0px;
+	border-style: none;
+	position:relative;
+	height:550px;
+	padding: 0px;
+	margin: 0px;
+	height: 100%;
+	width: 100%;
+	z-index: 5;
+}
+div#container-login {
+	background: rgba(0,0,0,0.5);
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+	border: 3px solid #3A3A3C;
+	border-radius: 15px;
+	text-align="center";
+	padding: 0px;
+	margin: 0px;
+	padding: 10px;
+	height: 200px;
+	width: 300px;
+	font-color: white;
+}
+input#usr {
+	z-index: 10;
+}
+
+div#container-bicicleta {
+	background: rgba(0,0,0,0.5);
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+	border: 3px solid #3A3A3C;
+	border-radius: 15px;
+	text-align="center";
+	padding: 0px;
+	margin: 0px;
+	height: 550px;
+	width: 60%;
+	font-color: white;
+	z-index: 1;
+}
+
+div#container-config{
+	background: rgba(0,0,0,0.5);
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+	border: 3px solid #3A3A3C;
+	border-radius: 15px;
+	text-align="center";
+	padding: 10px;
+	margin: 0px;
+	height: 350px;
+	width: 50%;
+	font-color: white;
+}
+div#container-carregar {
+	background: rgba(0,0,0,0.5);
+	display: block;
+	position: fixed;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%)
+	border: 3px solid #3A3A3C;
+	border-radius: 15px;
+	text-align="center";
+	padding: 10px;
+	margin: 0px;
+	height: 200px;
+	width: 50%;
+	font-color: white;
+}
+div.tempo{
+	background: rgba(0,0,0,0.8);
+	color: #FBF138;
+	position: fixed;
+	border-radius: 15px;
+	top: 0px;
+	left: 0px;
+	width: 100%;
+	font-size:20px;
+	text-align: right;
+	font-weight: 100;
+	padding: 10px;
+	z-index: 0;
+	float: top;
+}
+table.tabela-bicicleta {
+	width: 90%;
+	color: #d3d3d3;
+	margin: 30px;
+}
+p.login {
+	color: white;
+	text-align: center;
+	
+}
+table, th, td {
+	border: 0px solid black;
+	padding: 0px;
+}
+h3.titulo {
+	color: #FBF138;
+	text-align: center;
+	margin: 5px;
+}
+h3 {
+	margin-top: 10px;
+}
+label {
+	color: #d3d3d3;
+}
+td.icon {
+	width: 10%;
+	color: #FBF138;
+}
+td.nome {
+	width: 60%;
+}
+td.status {
+	width: 10%;
+}
+td.remove {
+	color: red;
+}
+td.ok {
+	color: green;
+}
+td.liberar {
+	width: 20%;
+}
+div.contador {
+	margin: 20px;
+}
